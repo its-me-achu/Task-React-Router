@@ -1,0 +1,25 @@
+                                                              React-Router-ModalPage...
+This is a React-Router modalpage using ReactHooks & Router.I fetched the data's from given fake API.
+First i cretae three components for this project, insideof src folder.
+1) src => components =>Navbar.jsx
+2) src => components = > Products.jsx
+3) src => components => cartpage.jsx
+This is shopping application. You can add your cartlist which product you like, you can remove that same product in your catlist and also you can increase the quantity 
+of the product ii'll finally dispaly the amount with 10% discount.
+I create this page using html, css, javascriptcode in jsx files with the help of React-Router.
+First i'm going to shown our shop (King & Queen Shop ) Product's  and how we fetched data from fake API.
+In Navbar i shown mt shop name and our cartbutton.
+Secondi use API in products component.  In useState i put a empty array for [ products, setProducts ]. in useeffect also i put Empty array for avoiding rerendering the page.
+  From that link i got a productid, image, title and price of that product. And below of this i create a button AddToCart.
+when we click that button that product will add to our cartlist and that same time the button will the change it's state to Remove from cart. 
+This buttons working based on the operation what we written in app.jsx. In this file i wriiten the arrow function and return the results in if else conditions.
+Now this is a Cartpage component. Our cartpage component want's to shown the cartlist and it's also given the product details.
+When we click the you cart cutton it will shown our cartlist and the path also change because of using Routes.
+This is child component of App component. So, I Written the code in App.jsxfor carItems, closeCart, removefromCart, increase and decreese buttons.
+I get that from using props{}. 
+Cartitem have details about product for this i use setCartitems.
+when we go to our cartlist we can incraese the product count using (+) and decreece (-). Whwn it is + the price will also increase and dicreace.
+Finally the amount will shown the 10% discount. price function is writte in this same page because we need to shown a new page.
+If we need to show the new page in react we written that code in same page don't use the props here. And put  a Route for this navigation.
+In Navbar we take a length from cartItems for that count and call the openCart function here. In jsx calling  the function we use {}.
+  Finally we create a Amazing shooping page!.....
